@@ -1,0 +1,6 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/fondo-header.avif');
+  padding: 100px 0;
+  color: white;
+}
