@@ -12,7 +12,7 @@
 <body>
 
   <!-- Navbar navageación superior -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">VisualArt</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -21,15 +21,18 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Galeria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" aria-disabled="true">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Contacto</a>
           </li>
         </ul>
 
@@ -40,7 +43,7 @@
 
   <header class="hero-section text-center">
     <div class="container">
-      
+
       <h1 class="fw-bold display-3">Explora lo Visual</h1>
       <p class="lead">Un sitio web elegante construido con Bootstrap 5 y fotos aleatorias de la Api Unsplash</p>
     </div>
@@ -57,38 +60,42 @@
     <div class="row">
       <!-- Tarjeta de boostrap con disposicion de columnas de bootstrap 5 -->
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=600&h=400&auto=format&fit=crop" class="card-img-top" alt="...">
+        <div class="card h-100">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=600&h=400&auto=format&fit=crop"
+            class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Leer más</a>
           </div>
         </div>
       </div>
       <!-- End Tarjeta de boostrap con disposicion de columnas de bootstrap 5 -->
 
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&h=400&auto=format&fit=crop" class="card-img-top" alt="...">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&h=400&auto=format&fit=crop"
+            class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Leer más</a>
           </div>
         </div>
       </div>
 
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&h=400&auto=format&fit=crop" class="card-img-top" alt="...">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&h=400&auto=format&fit=crop"
+            class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Leer más</a>
           </div>
         </div>
       </div>
@@ -98,13 +105,70 @@
   </main>
   <!-- End Contenido Principal -->
 
+  <!-- formulario -->
+<section id="contacto" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold">Contáctanos</h2>
+                        <hr class="w-25 mx-auto border-primary border-3 opacity-75">
+                        <p class="lead">¿Tienes un proyecto en mente? Nos encantaría escucharte.</p>
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Juan Pérez" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingresa tu nombre.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control form-control-lg" id="email" placeholder="tu@email.com" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingresa un email válido.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control form-control-lg" id="asunto" placeholder="¿En qué podemos ayudarte?" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingresa un asunto.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control form-control-lg" id="mensaje" rows="5" placeholder="Cuéntanos más sobre tu proyecto..." required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor escribe un mensaje.
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- end formulario -->
 
   <!-- Footer  -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Mi Sitio Web. Hecho con Bootstrap 5.</p>
-        </div>
-    </footer>
+    <footer class="bg-dark text-white py-4 border-top border-secondary">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Mi Sitio Web. Hecho con Bootstrap 5.</p>
+    </div>
+  </footer>
   <!-- End Footer -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
