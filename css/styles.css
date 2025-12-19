@@ -3,4 +3,6 @@
     url('../img/fondo-header.avif');
   padding: 100px 0;
   color: white;
+  background-size: cover;
+  background-position: center;
 }
